@@ -28,7 +28,7 @@ body {
     color: $text;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden!important;
-   
+    transition: .5s;
 }
 
 .day-night {
@@ -45,10 +45,10 @@ a:hover {
 }
 
 .nav {
-    background: #F6F8FA;
-    padding: 30px 0px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.064);
+    background: none;
+    padding: 10px 0px;
     
+    transition: .3s;
     width: 100%;
     display: inline-block;
     
@@ -62,7 +62,7 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    transition: all .5s ease;
+    transition: all 1s ease;
     position: sticky!important;
     top: 0;
 }
@@ -438,7 +438,7 @@ z-index: 999;
                     top: 0;
                     left: 0;
                     z-index: -1;
-                    padding: 5px;
+                    
                     margin-right: 10px;
                     display: inline-block;
 
@@ -576,21 +576,22 @@ width: 20rem;
             z-index: 10000;
             cursor: pointer;
             transition: .5s ease!important;
-            font-size: 50px;
+            font-size: 30px;
         }
 
         .navbar-list-1 {
             display: none;
             position: fixed;
             z-index: 999;
-            width: 66%;
+            width: 60%;
             right: 0;
             top: 0;
             background-color: black;
             height: 100vh;
             align-items: center;
             transition: all 0.2s ease-in!important;
-
+ 
+            
             
             ul{
                 display: flex;
@@ -830,7 +831,7 @@ width: 100%;
 
         transform: translateY(-10px);
 
-        box-shadow: 0 10px 30px $text;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 
     }
 
@@ -949,9 +950,12 @@ h3 {
 
 // Comments
 
+
+
+
 .swiper {
-    width: 1300px;
-    height: 600px;
+    width: 600px;
+    height: 300px;
   }
 
   .swiper-cont {
@@ -978,8 +982,8 @@ h3 {
     border-radius: 15px;
 }
 
-.navbar-list-1 ul {
-    font-size: 25px;
+.navbar-list-1 li a {
+    font-size: 20px!important;
     
 }
 
@@ -995,3 +999,24 @@ h3 {
 color: $text;
 display: inline-block;
 }
+
+.comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments__header {
+    margin-bottom: 0;
+}
+
+.navbar .navbar-list-1 .show{
+    transition: all .5s ease;
+}
+
+
+.scroll-header {
+    background-color: $bg-color;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.132);
+}
+
