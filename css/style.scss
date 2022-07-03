@@ -32,7 +32,7 @@ body {
 }
 
 .day-night {
-    background-color: $dark;
+    background-color: #393B50;
 }
 
 
@@ -827,7 +827,7 @@ width: 100%;
 
         color: $white;
 
-        background-color: #77819a;
+        background-color: $red;
 
         transform: translateY(-10px);
 
@@ -839,7 +839,7 @@ width: 100%;
         content: "";
         position: absolute;
         display: block;
-        background: $text;
+        background: $white;
         width: 10%;
         height: 5%;
         top: 0;
@@ -853,7 +853,7 @@ width: 100%;
         content: "";
         position: absolute;
         display: block;
-        background: $text;
+        background: $white;
         width: 10%;
         height: 5%;
         bottom: 0;
@@ -1020,3 +1020,57 @@ display: inline-block;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.132);
 }
 
+.twin-button {
+    margin-top: 4rem;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.button-giris {
+ text-decoration: none;
+ color: $white;
+ padding: 2rem 3rem 2rem 3rem;
+ background-color: #66B422;
+ border-radius: .3rem;   
+ margin-right: 1rem; 
+ transition: .5s;
+
+ &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 3px 10px #66b4227e;
+ }
+}
+
+
+.button-kayit {
+    text-decoration: none;
+    color: $white;
+    padding: 2rem 3rem 2rem 3rem;
+    background-color: $red;
+    border-radius: .3rem;   
+     
+    transition: .5s;
+   
+    &:hover {
+       transform: translateY(-10px);
+       box-shadow: 0px 3px 10px #e3464995;
+    }
+   }
+
+   .button-wha {
+    text-decoration: none;
+    padding: 2rem 3rem 2rem 3rem;
+    background-color: #66B422;
+    border-radius: 1.5rem;
+    color: $white;
+    margin-bottom: 5rem;
+    display: inline-block;
+    font-size: 2rem;
+    width: 100%;
+
+    
+   }
+
+   .click {
+    font-size: 1.2rem;
+   }
